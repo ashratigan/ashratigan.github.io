@@ -1,7 +1,11 @@
 body {
-  background: #000;
+  /* background: #000; */
 }
 
 h1 {
-  color: #FF2734;
+  /* color: #FF2734; */
+}
+
+h3 {
+  text-transform: uppercase;
 }
