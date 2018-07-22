@@ -2,8 +2,8 @@
 
 ## Overview
 
-This is the repo for my personal website! This is a work in progress, and I hope to have it up and running soon. 
+This is the repository for my personal website! This is a work in progress, and I  will be updating it with new projects. Check it out and let's get in touch! 
 
 ## Technologies Used
 
-HTML, CSS, JavaScript
+HTML, CSS, Bootstrap
