@@ -1,67 +1,59 @@
-/* **************************** */
-/* GENERAL STYLES */
-/* **************************** */
-body {
-  text-align: center;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    text-align: center;
 }
-h3 {
-  text-transform: uppercase;
-  font-size: 3em;
-}
+
 h1 {
-  font-size: 7em;
-  padding-top: 200px;
+    font-size: 10em;
+    margin: 0;
+    color: #eee;
+    text-shadow: 2px 2px 4px #111;
 }
 
-/* **************************** */
-/* STYLES FOR HEADER */
-/* **************************** */
-header {
-/*  */
-}
-.welcome {
-  /* background-image: url(https://i.imgur.com/gP7WEs9.jpg); */
-  background-image: url(../../images/milford.jpg);
-  padding: 200px 0;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #eee;
-  text-shadow: 2px 2px 4px #111;
-  /* -webkit-filter: grayscale(100%); */
-  /* Safari 6.0 - 9.0 */
-  /* filter: grayscale(100%); */
+h2 {
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #eee;
+    text-shadow: 2px 2px 4px #111;
 }
 
-.welcome > img {
-  padding: 100px;
+h3 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+#top {
+    padding: 200px 0;
+}
+
+#top > p {
+   font-size: 1em;
+   color: #eee;
+   text-shadow: 2px 2px 4px #111;
+   text-align: center;
+   /* padding-top: 100px; */
 }
 /* **************************** */
 /* STYLES FOR ABOUT */
 /* **************************** */
-.about {
+#about {
   padding: 50px;
-  /* background-color: red; */
-}
-
-.col-4 > h3 {
-  /* padding-bottom: 20px; */
-  /* background-color: blue; */
-}
-
-.col-8 > p {
-  text-align: left;
 }
 
 /* **************************** */
 /* STYLES FOR SKILLS */
 /* **************************** */
-.skills {
+#skills {
   padding: 50px;
-  background: #666;
 }
 
-.skills>h3 {
+#skills>h3 {
   padding-bottom: 20px;
 }
 
@@ -69,30 +61,107 @@ header {
 /* STYLES FOR PROJECTS */
 /* **************************** */
 
-.projects {
+#projects {
   padding: 50px;
 }
 
-.projects>h3 {
+#projects>h3 {
   padding-bottom: 20px;
 }
-
 
 /* **************************** */
 /* STYLES FOR EXPERIENCE */
 /* **************************** */
-.experience {
+#experience {
   padding: 50px;
+  /* text-align: left; */
+}
+h5 {
   text-align: left;
 }
+.col-12>h4 {
+    text-align: left;
+}
 
-.experience > h3 {
+#experience > h3 {
   text-align: center;
   padding-bottom: 20px;
 }
 
 .col-12>p {
   margin-bottom: 5em;
+  text-align: left;
+}
+
+/* **************************** */
+/* STYLES FOR Parallax effect */
+/* **************************** */
+.parallax {
+    /* The image used */
+    background-image: url(../../images/dalton.jpg);
+    /* filter: grayscale(100%); */
+    /* background-image: url('img_parallax.jpg'); */
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url(../../images/kaikoura.JPG);
+    /* filter: grayscale(100%); */
+    /* background-image: url('img_parallax.jpg'); */
+    /* Full height */
+    height: 60%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url(../../images/NZroad.JPG);
+    /* filter: grayscale(100%); */
+    /* background-image: url('img_parallax.jpg'); */
+    /* Full height */
+    height: 60%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4 {
+    /* The image used */
+    background-image: url(../../images/alaska.jpg);
+    /* filter: grayscale(100%); */
+    /* background-image: url('img_parallax.jpg'); */
+    /* Full height */
+    height: 60%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax5 {
+    /* The image used */
+    background-image: url(../../images/bear.jpg);
+    /* filter: grayscale(100%); */
+    /* background-image: url('img_parallax.jpg'); */
+    /* Full height */
+    height: 60%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* **************************** */
@@ -100,7 +169,7 @@ header {
 /* **************************** */
 footer {
   /* background-image: url(https://i.imgur.com/j0XWBXx.jpg); */
-  border-top: 3px solid #666;
+  /* border-top: 3px solid #666; */
   background: linear-gradient(#999, #fff 10%);
   /* background: linear-gradient(#999, #fff 10%, #fff 90%, #999); */
   padding: 20px 0;
@@ -109,6 +178,13 @@ footer {
 .contact {
   display: block;
   padding: 10px;
+}
+
+/* **************************** */
+/* STYLES FOR PROJECT DISPLAY*/
+/* **************************** */
+#projects {
+    padding: 10%;
 }
 
 #tictactoe {
@@ -133,6 +209,7 @@ footer {
   color: #eee;
   text-shadow: 2px 2px 4px #111;
   padding: 3em;
+  text-align: center;
 
 }
 
@@ -152,10 +229,21 @@ footer {
   background: #111;
 }
 
-/* .container {
-  background: #111;
-} */
 
-#arrow {
-padding-top: 100px;
+/* MEDIA QUERIES */
+@media only screen and (max-width: 992px) {
+   #top {
+       padding: 30px;
+   }
+   h1 {
+        font-size: 5em;
+        padding-top: 100px;
+        padding-bottom: 50px;
+   }
+   h2 {
+       font-size: 2em;
+   }
+   h3 {
+       font-size: 2em;
+   }
 }
