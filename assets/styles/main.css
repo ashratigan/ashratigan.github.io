@@ -204,6 +204,14 @@ footer {
   height: 350px;
 }
 
+#randomplace {
+  background-image: url(../../images/randomplace.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
 .projectInfo {
   opacity: 0;
   transition: all 0.5s;
@@ -227,6 +235,15 @@ footer {
 }
 
 #bucketlist:hover {
+  background: #111;
+}
+
+
+#randomplace:hover .projectInfo {
+  opacity: 1;
+}
+
+#randomplace:hover {
   background: #111;
 }
 
