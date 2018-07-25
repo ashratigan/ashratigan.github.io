@@ -1,31 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Domine|Lato:300|Open+Sans+Condensed:300');
+
 body,
 html {
-    height: 100%;
-    margin: 0;
-    text-align: center;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Open Sans Condensed', sans-serif; */
+  /* font-family: 'Domine', serif; */
 }
 
 h1 {
-    font-size: 10em;
-    margin: 0;
-    color: #eee;
-    text-shadow: 2px 2px 4px #111;
+  font-size: 10em;
+  margin: 0;
+  color: #eee;
+  text-shadow: 2px 2px 4px #111;
 }
 
 h2 {
-    text-transform: uppercase;
-    font-size: 4em;
-    color: #eee;
-    text-shadow: 2px 2px 4px #111;
+  text-transform: uppercase;
+  /* font-family: 'Open Sans Condensed', sans-serif; */
+  font-size: 4em;
+  color: #eee;
+  text-shadow: 2px 2px 4px #111;
 }
 
 h3 {
-    text-transform: uppercase;
-    font-size: 3.5em;
+  text-transform: uppercase;
+  /* font-family: 'Open Sans Condensed', sans-serif; */
+  font-size: 3.5em;
+}
+
+h6 {
+  /* font-family: 'Open Sans Condensed', sans-serif; */
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5em;
 }
 
 p {
   font-size: 1.5em;
+  /* font-family: 'Open Sans Condensed', sans-serif; */
 }
 
 #top {
