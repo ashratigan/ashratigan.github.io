@@ -280,7 +280,10 @@ footer {
    h3 {
        font-size: 2em;
    }
-   h4 {
+   .col-4>h4 {
+     font-size: 1em;
+   }
+   h6 {
      font-size: 1em;
    }
    p {
