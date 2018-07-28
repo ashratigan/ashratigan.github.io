@@ -97,71 +97,80 @@ h5 {
 /* STYLES FOR Parallax effect */
 /* **************************** */
 .parallax {
-    /* The image used */
-    background-image: url(../../images/dalton.jpg);
-    /* filter: grayscale(100%); */
-    /* background-image: url('img_parallax.jpg'); */
-    /* Full height */
-    height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url(../../images/dalton.jpg);
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .parallax2 {
-    /* The image used */
-    background-image: url(../../images/kaikoura.JPG);
-    /* filter: grayscale(100%); */
-    /* background-image: url('img_parallax.jpg'); */
-    /* Full height */
-    height: 60%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url(../../images/kaikoura.JPG);
+  /* Full height */
+  height: 60%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .parallax3 {
-    /* The image used */
-    background-image: url(../../images/NZroad.JPG);
-    /* filter: grayscale(100%); */
-    /* background-image: url('img_parallax.jpg'); */
-    /* Full height */
-    height: 60%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url(../../images/NZroad.JPG);
+  /* Full height */
+  height: 60%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .parallax4 {
-    /* The image used */
-    background-image: url(../../images/alaska.jpg);
-    /* filter: grayscale(100%); */
-    /* background-image: url('img_parallax.jpg'); */
-    /* Full height */
-    height: 60%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url(../../images/alaska.jpg);
+  /* filter: grayscale(100%); */
+  /* background-image: url('img_parallax.jpg'); */
+  /* Full height */
+  height: 60%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .parallax5 {
-    /* The image used */
-    background-image: url(../../images/bear.jpg);
-    /* filter: grayscale(100%); */
-    /* background-image: url('img_parallax.jpg'); */
-    /* Full height */
-    height: 60%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url(../../images/bear.jpg);
+  /* filter: grayscale(100%); */
+  /* background-image: url('img_parallax.jpg'); */
+  /* Full height */
+  height: 60%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* **************************** */
@@ -245,5 +254,20 @@ footer {
    }
    h3 {
        font-size: 2em;
+   }
+   .parallax {
+     background-attachment: scroll;
+   }
+   .parallax2 {
+     background-attachment: scroll;
+   }
+   .parallax {
+     background-attachment: scroll;
+   }
+   .parallax {
+     background-attachment: scroll;
+   }
+   .parallax {
+     background-attachment: scroll;
    }
 }
