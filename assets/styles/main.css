@@ -265,7 +265,7 @@ footer {
 
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1020px) {
    #top {
        padding: 30px;
    }
