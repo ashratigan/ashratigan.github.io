@@ -265,7 +265,7 @@ footer {
 
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
    #top {
        padding: 30px;
    }
@@ -288,5 +288,20 @@ footer {
    }
    p {
      font-size: 0.9em;
+   }
+   .parallax {
+     background-attachment: initial;
+   }
+   .parallax2 {
+     background-attachment: initial;
+   }
+   .parallax3 {
+     background-attachment: initial;
+   }
+   .parallax4 {
+     background-attachment: initial;
+   }
+   .parallax5 {
+     background-attachment: initial;
    }
 }
