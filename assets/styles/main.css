@@ -210,13 +210,15 @@ p {
 /* STYLES FOR FOOTER */
 /* **************************** */
 footer {
-  /* background-image: url(https://i.imgur.com/j0XWBXx.jpg); */
-  /* border-top: 3px solid #666; */
   background: linear-gradient(#999, #fff 10%);
-  /* background: linear-gradient(#999, #fff 10%, #fff 90%, #999); */
   padding: 20px 0;
-  
+  font-weight: 900;
 }
+
+footer > h4 {
+  font-size: 2em;
+}
+
 .contact {
   display: block;
   padding: 10px;
