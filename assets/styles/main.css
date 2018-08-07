@@ -227,9 +227,9 @@ footer > h4 {
 /* **************************** */
 /* STYLES FOR PROJECT DISPLAY*/
 /* **************************** */
-#projects {
+/* #projects {
     padding: 10%;
-}
+} */
 
 #tictactoe {
   background-image: url(../../images/tictactoe.png);
