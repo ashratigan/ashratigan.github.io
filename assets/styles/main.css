@@ -255,6 +255,14 @@ footer > h4 {
   height: 350px;
 }
 
+#nozama {
+  background-image: url(../../images/nozama.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
 .projectInfo {
   opacity: 0;
   transition: all 0.5s;
@@ -287,6 +295,14 @@ footer > h4 {
 }
 
 #randomplace:hover {
+  background: #111;
+}
+
+#nozama:hover .projectInfo {
+  opacity: 1;
+}
+
+#nozama:hover {
   background: #111;
 }
 
