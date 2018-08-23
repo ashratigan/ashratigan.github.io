@@ -263,6 +263,24 @@ footer > h4 {
   height: 350px;
 }
 
+#noteit {
+  background-image: url(../../images/noteit.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+#extra {
+  background-image: url(../../images/extra.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  background-color: rgba(7, 7, 7, 0.6);
+  background-blend-mode: darken;
+}
+
 .projectInfo {
   opacity: 0;
   transition: all 0.5s;
@@ -305,6 +323,26 @@ footer > h4 {
 #nozama:hover {
   background: #111;
 }
+
+#noteit:hover .projectInfo {
+  opacity: 1;
+}
+
+#noteit:hover {
+  background: #111;
+}
+
+.projectExtra {
+  text-align: center;
+  color: #eee;
+  text-shadow: 2px 2px 4px #111;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+  /* text-transform: uppercase; */
+  font-family: 'Domine', serif;
+}
+
 
 
 /* MEDIA QUERIES */
