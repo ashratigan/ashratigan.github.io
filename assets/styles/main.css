@@ -30,8 +30,9 @@ h3 {
   text-transform: uppercase;
   font-family: 'Domine', serif;
   /* font-family: 'Open Sans Condensed', sans-serif; */
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 900;
+  margin: 0;
 }
 
 h5 {
@@ -67,18 +68,26 @@ p {
 /* STYLES FOR ABOUT */
 /* **************************** */
 #about {
-  padding: 50px;
+  padding:50px;
 }
 
 #me {
   width: 200px;
   height: auto;
-  padding-top: 25px;
+  padding: 25px 0;
 }
-/* 
-#meText> p {
-  font-size: 12em;
-} */
+
+#meText {
+  text-align: left;
+}
+
+a {
+  color: white;
+}
+
+.btn {
+  margin: 10px;
+}
 
 /* **************************** */
 /* STYLES FOR SKILLS */
@@ -131,7 +140,7 @@ p {
   padding-bottom: 20px;
 }
 
-.row {
+#experience > .row {
   padding-bottom: 50px;
 }
 
@@ -373,21 +382,42 @@ footer > h4 {
      font-size: 1em;
    }
    p {
-     font-size: 0.9em;
+     font-size: 1.1em;
    }
-   .parallax {
-     background-attachment: initial;
+  #about {
+     margin: 0;
+     padding: 20px 20px;
    }
-   .parallax2 {
-     background-attachment: initial;
+}
+@media only screen and (max-width: 840px) {
+  .parallax {
+    background-attachment: initial;
+  }
+  .parallax2 {
+    background-attachment: initial;
+  }
+  .parallax3 {
+    background-attachment: initial;
+  }
+  .parallax4 {
+    background-attachment: initial;
+  }
+  .parallax5 {
+    background-attachment: initial;
+  }
+  .projectInfo { 
+    font-size: 12px;
+  }
+
+  #meText > p {
+    text-align: center;
    }
-   .parallax3 {
-     background-attachment: initial;
+
+   #meText {
+     padding-top: 10px;
    }
-   .parallax4 {
-     background-attachment: initial;
-   }
-   .parallax5 {
-     background-attachment: initial;
-   }
+
+  img {
+    width: 40px;
+  }
 }
