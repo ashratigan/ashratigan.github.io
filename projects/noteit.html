@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/styles/projects.css" rel="stylesheet" type="text/css">
+    <title>Note It</title>
+</head>
+<body>
+    <h1>Note It</h1>
+    <h2>A React App using Axios to access a Ruby on Rails JSON API</h2>
+    <div class="links">
+        <a class="icon" href="https://github.com/ashratigan/note-it-client" target="blank">
+            <img alt="GitHub: https://github.com/ashratigan/note-it-client" src="../images/icons8-github-64.png">
+        </a>
+        <a class="icon" href="https://note-it-client.herokuapp.com/" target="blank">
+            <img alt="GitHub: https://note-it-client.herokuapp.com/" src="../images/icons8-browse-page-64.png">
+        </a>
+        <a class="icon" href="https://github.com/ashratigan/note-it-api" target="blank">
+            <img alt="GitHub: https://github.com/ashratigan/note-it-api" src="../images/icons8-github-64.png">
+        </a>
+        <p>Front End Repo | Deployed Site | Back End Repo</p>
+    </div>    
+    <div class="about">
+        <p> This app was designed as a fun way for someone to brainstorm and save ideas. I'm always thinking of new ideas for projects, but if I don't have somewhere to write them down, I'll forget them. Now, I have a place to save my ideas!</p>        
+        <p>Before coding, I created an ERD, wireframe, and user stories. I also planned the React components that I would use, and the general structure of the app. In additon, I created a schedule for myself with a rough estimate of how long each feature would take, and I set aside time for teaching myself more about React.</p>
+        <p>This is a full stack, single page application. I began by creating the back end using Ruby on Rails. The front end was made with React. I used Axios to connect the React front end to the Rails back end.</p>
+        <hr>
+        <p>The first feature I completed was create new note. I added a button to the top of the page, and with each click a new sticky note appears! When a new note appears the editing form displays, so a user can add a title and contents right away. The note can be edited later by double clicking on it.</p>
+        <img class="img" src="./images/note-it-new.gif">
+        <p>I utilized the React-Draggble package to allow users to drag sticky notes anywhere on their screen. A single click allows a user to drag the note anywhere on the screen, while a double click allows a user to edit the contents of the note. See demonstration below.</p>
+        <img class="img" src="./images/note-it-move.gif">
+        <p>I wanted this app to be a way for people to brainstorm and write down ideas all in one, so I added a fun addition where a user who needs inspiration can click a button and a random quote, trivia fact, and writing prompt is displayed. The quotes come from <a href="https://talaikis.com/api/quotes/random/">talaikis.com</a>, the trivia facts come from <a href="https://opentdb.com/api.php?amount=1&category=22&difficulty=hard">opentdb.com</a>, and the writing prompt is from <a href="https://ineedaprompt.com/dictionary/default/prompt?q=adj+noun+adv+verb+noun+location">ineedaprompt.com</a></p>
+        <img class="img" src="./images/note-it-inspiration.gif">
+    </div> 
+    <div class="back">
+        <a href="../index.html#projects">Back to Project Section</a>
+    </div>
+</body>
+</html>

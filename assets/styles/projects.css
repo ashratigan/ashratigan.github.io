@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Domine300,400,900|Lato:300,400,900');
+
+body {
+    margin: 20px;
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Domine', serif;
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 400;   
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    margin: 0 48px;
+}
+
+.about > p {
+    text-align: justify;
+}
+
+.links {
+    text-align: center;
+    font-weight: 400;
+}
+
+.links > p {
+    margin: 0;
+}
+
+.about {
+    margin: 0 100px;
+}
+
+.img {
+    width: 90%;
+    margin: 5%;
+}
+.back {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 840px) {
+    body {
+        margin: 10px;
+        font-size: .8em;
+    }
+    .icon {
+      margin: 5px;
+    } 
+    .about {
+        margin: 10px;
+    }
+}

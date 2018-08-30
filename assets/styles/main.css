@@ -255,7 +255,8 @@ footer > h4 {
 
 #bucketlist {
   background-image: url(../../images/bucketlist.png);
-  background-position: center top;
+  /* background-position: left top; */
+  background-position: 40% 50%; 
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
@@ -263,7 +264,8 @@ footer > h4 {
 
 #randomplace {
   background-image: url(../../images/randomplace.png);
-  background-position: center top;
+  /* background-position: left top; */
+  background-position: 20% 50%; 
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
@@ -271,7 +273,7 @@ footer > h4 {
 
 #nozama {
   background-image: url(../../images/nozama.png);
-  background-position: center top;
+  background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
