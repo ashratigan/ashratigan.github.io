@@ -1,31 +1,91 @@
 @import url('https://fonts.googleapis.com/css?family=Domine300,400,900|Lato:300,400,900');
 
 body {
-    margin: 20px;
+    /* margin: 20px; */
     font-size: 1.5em;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    /* background: black; */
+    background: #eee;
 }
 
 h1 {
-    text-align: center;
-    font-size: 4em;
+    /* text-align: center; */
+    font-size: 2em;
     font-family: 'Domine', serif;
-    margin-bottom: 0;
+    /* padding-top: 50px; */
+    margin: 0;
 }
 
 h2 {
-    text-align: center;
+    /* text-align: center; */
+    font-size: 1em;
+    margin-top: 0;
     font-weight: 400;   
 }
+
+h3 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
+.contents {
+    /* opacity: 0.5; */
+    background: white;
+    margin: 100px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    width: 400px;
+    margin: 50px 0 0 50px;
+}
+/* .project-img {
+  background-image: url(../../images/noteit.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 300px;
+  margin: 50px;
+} */
+
+/* .title h1, .title h3 {
+    display: inline;
+} */
+
 .icon {
     margin: 0 48px;
+    vertical-align: middle;
+    display: flex;
+    /* display: inline; */
 }
+
+.icon p {
+    /* vertical-align: bottom; */
+    margin: 15px 0 0 0;
+    /* text-transform: uppercase; */
+}
+
+.icon img {
+    height: 40px;
+    margin: 10px 0 0 0;
+    flex: wrap;
+    /* float: right; */
+}
+
+/* .icon img, icon p {
+    display: inline;
+} */
 
 .about > p {
     text-align: justify;
@@ -34,6 +94,8 @@ a {
 .links {
     text-align: center;
     font-weight: 400;
+    margin: 50px 50px 0 0;
+    /* float: right; */
 }
 
 .links > p {
@@ -41,7 +103,7 @@ a {
 }
 
 .about {
-    margin: 0 100px;
+    margin: 0 50px;
 }
 
 .img {
@@ -51,10 +113,20 @@ a {
 .back {
     text-align: center;
     font-weight: 400;
-    margin-bottom: 100px;
+    padding-bottom: 50px;
+    width: 100%;
 }
 
-@media only screen and (max-width: 840px) {
+.tech {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.tech h4, .tech p{
+    display: inline;
+}
+
+@media only screen and (max-width: 1076px) {
     body {
         margin: 10px;
         font-size: .8em;
@@ -65,4 +137,23 @@ a {
     .about {
         margin: 10px;
     }
+    .contents {
+        margin: 10px;
+    }
+    .links {
+        margin: 5px;
+    }
+    .title {
+        margin: 5px;
+        text-align: center;
+    }
 }
+
+/* @media only screen and (max-width: 1076px) {
+   .links {
+        margin: 5px;
+    }
+    .title {
+        margin-left: 50px;
+    } */
+/* } */

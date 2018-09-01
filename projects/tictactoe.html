@@ -5,27 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../assets/styles/projects.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
-    <h2>A VanillaJS App using AJAX to access a Ruby on Rails JSON API</h2>
-    <div class="links">
-        <a class="icon" href="https://github.com/ashratigan/tic-tac-toe" target="blank">
-            <img alt="GitHub: https://github.com/ashratigan/tic-tac-toe" src="../images/icons8-github-64.png">
-        </a>
-        <a class="icon" href="https://ashratigan.github.io/tic-tac-toe/" target="blank">
-            <img alt="GitHub: https://ashratigan.github.io/tic-tac-toe/" src="../images/icons8-browse-page-64.png">
-        </a>
-        <p>Front End Repo | Deployed Site</p>
-    </div>   
-    <div class="about">
-        <p></p>
-        <img class="img" src="./images/ttt-demo.gif">
-        <img class="img" src="./images/ttt-dino.gif">
-    </div>
-    <div class="back">
-        <a href="../index.html#projects">Back to Project Section</a>
-    </div>
+    <div class="contents">
+        <div class="title"> 
+            <h1>Tic Tac Toe</h1>
+            <h2>A JavaScript App using AJAX to access a Ruby on Rails JSON API</h2>
+        </div>
+        <div class="links">
+            <a class="icon" href="https://ashratigan.github.io/tic-tac-toe/" target="blank">
+                <img alt="GitHub: https://ashratigan.github.io/tic-tac-toe/" src="../images/icons8-browse-page-64.png">
+                <p>View Live Site</p>
+            </a>
+            <a class="icon" href="https://github.com/ashratigan/tic-tac-toe" target="blank">
+                <img alt="GitHub: https://github.com/ashratigan/tic-tac-toe" src="../images/icons8-github-64.png">
+                <p>Front End Repository</p>
+            </a>
+        </div>   
+        <div class="about">
+            <hr>
+            <h3>About</h3>
+            <p>This was my first project as part of General Assembly's Web Development Immersive. When this project was first assigned, I was worried I wouldn't know where to begin. But once, I broke it down into steps, the project quickly became manageable. I began the project by trying to figure out the logic for tic tac toe.</p>
+            <p>I began by breaking the logic up into smaller pieces. First, I wanted to click a square and see and X displayed. Next, I worked on getting the X to switch to an O on every other click. Then, I worked on figuring out the logic to determine a winner. After the game logic was solid I worked to connect it to a back end API, where clicking on New Game created a new game and where every move is a patch request recording the moves in the game.</p>
+            <hr>
+            <h3>In action</h3>
+            <p>I am most proud of the gifs that display in the background depedning on who wins. When a sun wins, a giant sun is displayed. When a moon wins, a multi-colored moon is displayed.</p>
+            <img class="img" src="./images/ttt-demo.gif">
+            <p>I wanted to allow users to choose their playing pieces, and I was thrilled when I got this functionality working. Users can choose their piece from a drop down menu. I really enjoyed adding the dinosaur emojis as playing pieces, and I especially love the gifs that display when one of them wins.</p>
+            <img class="img" src="./images/ttt-dino.gif">
+        </div>
+        <div class="tech">
+            <h4> Technologies Used: </h4><p> Javascript | jQuery | AJAX | CSS | HTML</p>
+        </div>
+        <div class="back">
+            <a href="../index.html#projects">Back to Project Section</a>
+        </div>
 </body>
 </html>
