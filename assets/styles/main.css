@@ -6,8 +6,7 @@ html {
   margin: 0;
   text-align: center;
   font-family: 'Lato', sans-serif;
-  /* font-family: 'Open Sans Condensed', sans-serif; */
-  /* font-family: 'Domine', serif; */
+  font-weight: 300;
 }
 
 h1 {
@@ -20,55 +19,59 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  /* font-family: 'Open Sans Condensed', sans-serif; */
   font-size: 4em;
   color: #eee;
   text-shadow: 2px 2px 4px #111;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 h3 {
   text-transform: uppercase;
   font-family: 'Domine', serif;
-  /* font-family: 'Open Sans Condensed', sans-serif; */
   font-size: 3em;
   font-weight: 900;
   margin: 0;
 }
 
-h5 {
-  text-align: left;
-}
-
-h6 {
-  /* font-family: 'Open Sans Condensed', sans-serif; */
-  text-align: left;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.5em;
-}
-
 p {
   font-size: 1.3em;
   text-align: left;
-  /* font-family: 'Open Sans Condensed', sans-serif; */
+}
+
+button {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  margin: 5px;
+}
+
+button>a {
+  text-decoration: none;
+  color: white;
 }
 
 #top {
-    padding: 200px 0;
+  padding: 200px 0;
 }
 
-#top > p {
-   font-size: 1em;
-   color: #eee;
-   text-shadow: 2px 2px 4px #111;
-   text-align: center;
-   /* padding-top: 100px; */
+#top>p {
+  font-size: 1em;
+  color: #eee;
+  text-shadow: 2px 2px 4px #111;
+  text-align: center;
 }
+
 /* **************************** */
 /* STYLES FOR ABOUT */
 /* **************************** */
-#about {
-  padding:50px;
+#about-container {
+  padding: 50px;
+  display: flex;
+  gap: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 #me {
@@ -77,16 +80,12 @@ p {
   padding: 25px 0;
 }
 
-#meText {
+#about-text {
   text-align: left;
 }
 
-a {
-  color: white;
-}
-
-.btn {
-  margin: 10px;
+.about-image {
+  min-width: 260px;
 }
 
 /* **************************** */
@@ -100,47 +99,33 @@ a {
   padding-bottom: 20px;
 }
 
-/* **************************** */
-/* STYLES FOR PROJECTS */
-/* **************************** */
-
-#projects {
-  padding: 50px;
+.skills-container>p {
+  margin: 0px;
 }
 
-#projects>h3 {
-  padding-bottom: 20px;
+.skills-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.projectInfo > p {
-  text-align: center;
-  font-size: 1em;
-  font-weight: 300;
-}
-
-.projectInfo>h4 {
-  font-family: 'Domine', serif;
-
-}
 /* **************************** */
 /* STYLES FOR EXPERIENCE */
 /* **************************** */
 #experience {
   padding: 50px;
-  /* text-align: left; */
 }
 
-.col-12>h4 {
-  text-align: left;
-  font-weight: 400;
-}
-
-#experience > h3 {
+#experience>h3 {
   text-align: center;
   padding-bottom: 20px;
 }
 
-#experience > .row {
+#experience>.row {
   padding-bottom: 50px;
 }
 
@@ -148,71 +133,63 @@ a {
 /* STYLES FOR Parallax effect */
 /* **************************** */
 .parallax {
-    /* The image used */
-    background-image: url(../../images/dalton.jpg);
-    /* filter: grayscale(100%); */
-    /* background-image: url('img_parallax.jpg'); */
-    /* Full height */
-    height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url(../images/dalton.jpg);
+  /* Set height */
+  min-height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax2 {
-    /* The image used */
-    background-image: url(../../images/arch.jpg);
-    /* filter: grayscale(100%); */
-    /* background-image: url('img_parallax.jpg'); */
-    /* Full height */
-    height: 55%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url(../images/arch.jpg);
+  /* Set height */
+  height: 55%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax3 {
-    /* The image used */
-    background-image: url(../../images/NZroad.JPG);
-    /* filter: grayscale(100%); */
-    /* background-image: url('img_parallax.jpg'); */
-    /* Full height */
-    height: 55%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url(../images/NZroad.JPG);
+  /* Set height */
+  height: 55%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .parallax4 {
-    /* The image used */
-    background-image: url(../../images/italy.jpg);
-    /* filter: grayscale(100%); */
-    /* background-image: url('img_parallax.jpg'); */
-    /* Full height */
-    height: 55%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url(../images/italy.jpg);
+  /* Set height */
+  height: 55%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .parallax5 {
-    /* The image used */
-    background-image: url(../../images/kaikoura.JPG);
-    /* filter: grayscale(100%); */
-    /* background-image: url('img_parallax.jpg'); */
-    /* Full height */
-    height: 55%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url(../images/kaikoura.JPG);
+  /* Set height */
+  height: 55%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* **************************** */
@@ -223,9 +200,10 @@ footer {
   padding: 20px 0;
 }
 
-footer > h4 {
+footer>p {
   font-size: 2em;
-  padding-top: 20px;
+  margin: 0;
+  text-align: center;
 }
 
 .contact {
@@ -233,191 +211,79 @@ footer > h4 {
   padding: 20px 0 60px 0;
 }
 
-.contact > a {
-  /* padding-top: 50px; */
+.contact>a {
   margin: 10px;
+  text-decoration: none;
 }
-
-/* **************************** */
-/* STYLES FOR PROJECT DISPLAY*/
-/* **************************** */
-/* #projects {
-    padding: 10%;
-} */
-
-#tictactoe {
-  background-image: url(../../images/tictactoe.png);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
-}
-
-#bucketlist {
-  background-image: url(../../images/bucketlist.png);
-  /* background-position: left top; */
-  background-position: 40% 50%; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
-}
-
-#randomplace {
-  background-image: url(../../images/randomplace.png);
-  /* background-position: left top; */
-  background-position: 20% 50%; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
-}
-
-#nozama {
-  background-image: url(../../images/nozama.png);
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
-}
-
-#noteit {
-  background-image: url(../../images/noteit.png);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
-}
-
-#extra {
-  background-image: url(../../images/extra.jpg);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
-  background-color: rgba(7, 7, 7, 0.6);
-  background-blend-mode: darken;
-}
-
-.projectInfo {
-  opacity: 0;
-  transition: all 0.5s;
-  color: #eee;
-  text-shadow: 2px 2px 4px #111;
-  padding: 2em;
-  text-align: center;
-
-}
-
-#tictactoe:hover .projectInfo {
-  opacity: 1;
-}
-
-#tictactoe:hover {
-  background: #111;
-}
-
-#bucketlist:hover .projectInfo {
-  opacity: 1;
-}
-
-#bucketlist:hover {
-  background: #111;
-}
-
-
-#randomplace:hover .projectInfo {
-  opacity: 1;
-}
-
-#randomplace:hover {
-  background: #111;
-}
-
-#nozama:hover .projectInfo {
-  opacity: 1;
-}
-
-#nozama:hover {
-  background: #111;
-}
-
-#noteit:hover .projectInfo {
-  opacity: 1;
-}
-
-#noteit:hover {
-  background: #111;
-}
-
-.projectExtra {
-  text-align: center;
-  color: #eee;
-  text-shadow: 2px 2px 4px #111;
-  position: relative;
-  top: 55%;
-  transform: translateY(-55%); 
-  /* text-transform: uppercase; */
-  font-family: 'Domine', serif;
-}
-
-
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1024px) {
-   #top {
-       padding: 30px;
-   }
-   h1 {
-        font-size: 5em;
-        padding-top: 100px;
-        padding-bottom: 50px;
-   }
-   h2 {
-       font-size: 2em;
-   }
-   h3 {
-       font-size: 2em;
-   }
-   .col-4>h4 {
-     font-size: 1em;
-   }
-   h6 {
-     font-size: 1em;
-   }
-   p {
-     font-size: 1.1em;
-   }
+  #top {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 5em;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
   #about {
-     margin: 0;
-     padding: 20px 20px;
-   }
+    margin: 0;
+    padding: 20px 20px;
+  }
 }
+
 @media only screen and (max-width: 840px) {
   .parallax {
     background-attachment: initial;
   }
+
   .parallax2 {
     background-attachment: initial;
   }
+
   .parallax3 {
     background-attachment: initial;
   }
+
   .parallax4 {
     background-attachment: initial;
   }
+
   .parallax5 {
     background-attachment: initial;
   }
-  .projectInfo { 
+
+  .projectInfo {
     font-size: 12px;
   }
 
-  #meText > p {
-    text-align: center;
-   }
+  #about-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+  }
 
-   #meText {
-     padding-top: 10px;
-   }
+  #about-text>p {
+    text-align: center;
+  }
+
+  #about-text {
+    padding-top: 10px;
+  }
 
   img {
     width: 40px;

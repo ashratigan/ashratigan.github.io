@@ -6,4 +6,4 @@ This is the repository for my personal website! This is a work in progress, and 
 
 ## Technologies Used
 
-HTML, CSS, Bootstrap
+HTML and CSS
